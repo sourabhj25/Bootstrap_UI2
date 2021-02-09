@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script data-require="jquery@*" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Udamy Home</title>
+
+
+    <style>
+        .button {
+            border: none;
+            color: white;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+        }
+
+        .button5 {
+            border-radius: 50%;
+        }
+
+        .mynavbar-default {
+            margin-bottom: 0px;
+        }
+
+        .myinput-group {
+            padding-right: 10px;
+            padding-top: 15px;
+        }
+
+        .mybutton {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .dropbtn {
+            background-color: #f8f8f8;
+            color: white;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #f5f5f5;
+        }
+
+
+        .topmid {
+            background-image: url(https://udemy-images.udemy.com/notices/home_banner/image/67c1197c-19af-4022-b801-a91bc0fbe1d7.jpg);
+            align-items: center;
+            height: 500px;
+            background-size: 100% 100%;
+        }
+
+        .topmid {
+            font-size: 40px;
+            max-width: 100%;
+            line-height: 1.33;
+            color: #fff;
+            font-style: normal;
+            font-weight: 300;
+            padding-top: 150px;
+            text-shadow: 0 2px 4px rgba(41, 48, 59, .55);
+            font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+
+        .middlestrip {
+            height: 100px;
+            display: flex;
+            font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size: 18px;
+            line-height: 1.43;
+            background: linear-gradient(-45deg,#ec5252,#6e1a52);
+            display: block;
+            border: none;
+            color: #fff;
+            text-align:justify;
+            padding-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar navbar-default mynavbar-default">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="col-sm-1 myinput-group"></div>
+                    <div class="col-sm-1">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">
+                                <img class="udemy-logo mynavbar-default" src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" alt="Udemy" width="110"
+                                    data-purpose="udemy-brand-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 myinput-group">
+                        <div class="dropdown ">
+                            <div class="dropbtn ">
+                                <a href="#" style="padding:20px 10px 0px 10px; font-size: 1.8rem; line-height: 1.5;font-family: Helvetica Neue,Helvetica,Arial,sans-serif; color:#777">
+                                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                                    Categories
+                                </a>
+                            </div>
+
+                            <div class="dropdown-content">
+                                <a href="#">Development</a>
+                                <a href="#">Business</a>
+                                <a href="#">IT & Software</a>
+                                <a href="#">Productivity</a>
+                                <a href="#">Design</a>
+                                <a href="#">Marketing</a>
+                                <a href="#">Photography</a>
+                                <a href="#">Lifestyle</a>
+                                <a href="#">Acedemic</a>
+                                <a href="#">Language</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="input-group myinput-group">
+                            <input id="email" type="text" class="form-control " name="email" placeholder="Search for Courses">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-search "></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#" style="padding:15px 10px" data-toggle="popover" data-placement: "bottom" title="Popover Header" data-content="Some content inside the popover">
+                                    <button type="button" class="btn mybutton">Udamy for Business</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" style="padding:15px 10px">
+                                    <button type="button" class="btn mybutton">Become an Instructor</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" style="padding:15px 10px">
+                                    <button type="button" class="button button5">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    </button>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="col-sm-2">
+                        <ul class="nav navbar-nav   ">
+                            <li>
+                                <a href="#" style="padding:15px 10px">
+                                    <button type="button" class="btn mybutton"> Log In </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" style="padding:15px 10px">
+                                    <button type="button" class="btn btn-danger mybutton">Sign Up</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-1 myinput-group"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topmid">
+        <div class="container">
+            <div class="texttitle" style="margin-bottom:10px">
+                Top-Rated Learning
+            </div>
+            <div class="textsubtitle" style="font-size:20px;margin-bottom:10px">
+                Course with the height student reviews on sale for ₹770
+            </div>
+            <div class="col-sm-6" style="padding-left:0px">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="What do you want to learn?">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="middlestrip">
+        <div class="row">
+            <div class="container">
+                <div class="col-sm-4">
+                    <strong>65,000 online courses </strong><br>
+                    Explore in variety of fresh topics
+                </div>
+                <div class="col-sm-4">
+                    <strong>Expert Instructions</strong><br>
+                    Find the right instructor for you
+                </div>
+                <div class="col-sm-4">
+                    <strong>Lifetime access</strong><br>
+                    Learn on your schedule
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+
+</html>
